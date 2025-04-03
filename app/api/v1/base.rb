@@ -1,0 +1,17 @@
+module API
+
+   module V1
+
+   class Base < Grape::API
+
+ 
+      vesrion 'v1', using:  :path
+
+
+       mount API::V1::Users
+
+          end
+
+        end
+
+end
